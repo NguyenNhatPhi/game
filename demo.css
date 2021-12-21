@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial,sans-serif;
+}
+.fixedBar{
+    width: calc(100vw - 20px);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    height:40px;
+    position:fixed;
+}
+.menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mn{
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 20px;
+}
+.fixedBar i{
+    color:white;
+}
+.mn:hover{
+    background: grey;
+    color: #000;
+}
+.search{
+    padding:10px 20px;
+}
+.fixedBar p:last-child :hover{
+    background: red;
+}
+.pop-up{
+    position:absolute;
+    top:40px;
+    left:420px;
+    background: white;
+    display:none;
+}
+dt{
+    padding:10px 20px;
+}
+dt:hover{
+    background: grey;
+    width:calc(100% - 40px);
+}
+.pu{
+    text-decoration: none;
+    color:black;
+}
+.info{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    flex-direction: column;
+    height: inherit;
+    transform: translateY(-30px);
+    color:white;
+}
+h1{
+    margin-bottom:20px;
+}
+#home{
+    background-image: url(image/band.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height:700px;
+    width:calc(100vw - 20px);
+    background-position: center;
+}
+#band,#tour{
+    padding: 50px 0;
+}
+#band h1,#band h2,#tour h1,#tour h2{
+    text-align:center;
+}
+#band h1,#tour h1{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+#band h2,#tour h2{
+    font-size: 15px;
+    font-weight: normal;
+    font-style:italic;
+    margin-bottom:15px;
+    color:grey;
+}
+#band p{
+    text-align:justify;
+    width:750px;
+    margin:auto;
+    font-size: 18px;
+    margin-bottom:50px;
+}
+.bandMembers{
+    display:flex;
+    width:750px;
+    justify-content: space-around;
+    align-items:center;
+    margin:auto;
+}
+.each img{
+    height:150px;
+    width: 150px;
+}
+.each h3{
+    text-align:center;
+    width:100%;
+    font-weight: normal;
+    margin-bottom:20px;
+}
+#tour{
+    background: #000;
+    color:white;
+}
+.status,.places{
+    width:750px;
+    margin:auto;
+}
+.status{
+    background: white;
+    color:grey;
+}
+.monthly{
+    display:flex;
+}
+.monthly p{
+    margin:10px;
+}
+.status .monthly:nth-child(2){
+    border-top: 1px solid rgba(128, 128, 128, 0.678);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.678);
+}
+.sold{
+    color:white;
+    background: red;
+    padding: 0px 8px;
+}
+.status .monthly:last-child{
+    justify-content: space-between;
+}
+.status .monthly:last-child p:last-child{
+    margin-right:50px;
+    background: black;
+    clip-path: circle(50%);
+    padding: 0px 7px;
+    color:white;
+}
+.places{
+    display:flex;
+    justify-content: space-between;
+    margin:20px auto;
+}
+#tour .novplace h1{
+    font-size: 20px;
+    color:black;
+}
+#tour .novplace .adv p{
+    color:black;
+    font-size: 18px;
+    margin-bottom:15px;
+}
+.novplace{
+    width: 235px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background: white;
+}
+.novplace img{
+    height:200px;
+    width: 235px;
+}
+#tour .novplace:first-child img{
+    align-self:flex-start;
+}
+#tour .novplace:last-child img{
+    align-self:flex-end;
+}
+.adv{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin:10px 0;
+}
+button{
+    background: #000;
+    color:white;
+    padding: 7px 10px;
+    font-size: 18px;
+}
+button:hover{
+    background: rgba(128, 128, 128, 0.438);
+    color:black;
+}
