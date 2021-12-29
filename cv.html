@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cv.css" text="text/css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c50cf666c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="line1">
+            <div class="square" onclick="player1(0)" ondblclick="player2(0)"></div>
+            <div class="square" onclick="player1(1)" ondblclick="player2(1)"></div>
+            <div class="square" onclick="player1(2)" ondblclick="player2(2)"></div>
+        </div>
+        <div class="line2">
+            <div class="square" onclick="player1(3)" ondblclick="player2(3)"></div>
+            <div class="square" onclick="player1(4)" ondblclick="player2(4)"></div>
+            <div class="square" onclick="player1(5)" ondblclick="player2(5)"></div>
+        </div>
+        <div class="line3">
+            <div class="square" onclick="player1(6)" ondblclick="player2(6)"></div>
+            <div class="square" onclick="player1(7)" ondblclick="player2(7)"></div>
+            <div class="square" onclick="player1(8)" ondblclick="player2(8)"></div>
+        </div>
+    </div>
+    <div class="loading">
+        <progress value="0" max="100"></progress>
+        <h1>Loading.... 0%</h1>
+    </div>
+    <button draggable="true">Regist</button>
+
+    <script src="cv.js"></script>
+</body>
+</html>
